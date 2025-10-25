@@ -101,8 +101,15 @@
     /* Hero Section */
     .hero {
         padding: 60px 0;
+        background-size: cover;
+        background-position: center;
+        min-height: 60vh;
     }
     
+    .hero, .page-hero {
+        background-attachment: scroll !important; /* Remove fixed attachment on mobile */
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -222,6 +229,35 @@
     .page-hero .hero-buttons .btn {
         width: 100%;
         max-width: 250px;
+    }
+}
+
+/* Medium-Small Devices (800px and down) */
+@media (max-width: 800px) {
+    .hero, .page-hero {
+        min-height: 50vh;
+        background-size: cover;
+        background-position: center 30%;
+    }
+
+    .hero-content {
+        padding: 40px 0;
+    }
+}
+
+/* Extra Small Devices (500px and down) */
+@media (max-width: 500px) {
+    .hero, .page-hero {
+        min-height: 40vh;
+        background-position: center 20%;
+    }
+
+    .hero-content {
+        padding: 30px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
     }
 }
 
