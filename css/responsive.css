@@ -1,0 +1,916 @@
+/* Responsive CSS for Mountolives Kiddies School */
+
+/* Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    /* Typography */
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-hero p {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    .header .container {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+    
+    /* Page Hero */
+    .page-hero {
+        padding: 60px 0;
+    }
+    
+    .page-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .page-nav a {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    /* Sections */
+    .portals,
+    .announcements,
+    .why-choose-us,
+    .mission-section,
+    .story-section,
+    .team-section,
+    .facilities-section,
+    .achievements-section,
+    .admission-process,
+    .important-dates,
+    .requirements-section,
+    .tuition-section,
+    .cta-section,
+    .contact-info-section,
+    .map-section,
+    .quick-contact-section {
+        padding: 60px 0;
+    }
+    
+    /* Grid Layouts */
+    .portal-grid,
+    .announcement-grid,
+    .features-grid,
+    .team-grid,
+    .facilities-grid,
+    .achievements-grid,
+    .process-steps,
+    .quick-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Cards */
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card,
+    .process-step,
+    .quick-contact-card {
+        padding: 20px;
+    }
+    
+    /* Contact Section */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Tables */
+    .dates-table,
+    .tuition-table {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 500px;
+    }
+    
+    /* Buttons */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-buttons .btn,
+    .page-hero .hero-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card,
+    .process-step,
+    .quick-contact-card {
+        padding: 15px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+    }
+    
+    .map-placeholder {
+        height: 300px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .hero-buttons,
+    .page-nav,
+    .chat-btn,
+    .portal-btn,
+    .btn {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .hero,
+    .page-hero {
+        background: none !important;
+        color: #000 !important;
+        padding: 20px 0 !important;
+    }
+    
+    .portals,
+    .announcements,
+    .why-choose-us,
+    .mission-section,
+    .story-section,
+    .team-section,
+    .facilities-section,
+    .achievements-section,
+    .admission-process,
+    .important-dates,
+    .requirements-section,
+    .tuition-section,
+    .cta-section,
+    .contact-info-section,
+    .map-section,
+    .quick-contact-section {
+        padding: 20px 0 !important;
+        background: none !important;
+    }
+    
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card,
+    .process-step,
+    .quick-contact-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        page-break-inside: avoid;
+    }
+}
+
+/* Admissions Page Responsive Styles */
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .tuition-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .requirements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .admissions-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .admissions-tab {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .tuition-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .additional-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .tuition-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .requirement-category {
+        padding: 20px;
+    }
+    
+    .tuition-program {
+        padding: 20px;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .admissions-tab {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .process-step {
+        padding: 20px 15px;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .fee-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .tuition-price {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* About Page Responsive Styles */
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .about-nav {
+        gap: 8px;
+    }
+    
+    .about-tab {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .mission-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .story-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .about-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-tab {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .mission-values {
+        grid-template-columns: 1fr;
+    }
+    
+    .story-timeline::before {
+        left: 25px;
+    }
+    
+    .timeline-year {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        font-size: 0.8rem;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .story-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-cta,
+    .achievements-cta {
+        padding: 30px 20px;
+    }
+    
+    .stat-item {
+        padding: 20px 15px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .about-tab {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .timeline-year {
+        margin-bottom: 15px;
+    }
+    
+    .timeline-content {
+        width: 100%;
+    }
+    
+    .story-timeline::before {
+        left: 25px;
+        top: 50px;
+        bottom: 0;
+    }
+    
+    .member-photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .facility-card {
+        padding: 20px;
+    }
+    
+    .facility-icon {
+        font-size: 2.5rem;
+    }
+    
+    .achievement-card {
+        padding: 20px;
+    }
+}
+
+/* Modal Responsive Styles */
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .form-row {
+        gap: 15px;
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .modal-content {
+        width: 98%;
+        margin: 2% auto;
+        max-height: 95vh;
+    }
+    
+    .modal-header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .form-actions .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .success-content {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .success-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+    }
+    
+    .checkbox-group {
+        align-items: flex-start;
+    }
+    
+    .checkbox-group label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Programs Page Responsive Styles - Updated */
+
+/* Programs Page Responsive Styles - Updated */
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .program-layout {
+        grid-template-columns: 55% 45%; /* Adjust ratio for tablets */
+    }
+    
+    .program-text {
+        padding: 30px;
+    }
+    
+    .program-features ul {
+        grid-template-columns: 1fr; /* Stack features on smaller screens */
+    }
+    
+    .image-placeholder {
+        width: 85%;
+        height: 85%;
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .program-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .program-tab {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .program-header {
+        padding: 25px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .program-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* This is the key change - stack only on mobile */
+    .program-layout {
+        grid-template-columns: 1fr; /* Stack on mobile */
+        min-height: auto;
+    }
+    
+    .program-text {
+        padding: 25px 20px;
+        order: 2; /* Content comes after image on mobile */
+    }
+    
+    .program-image {
+        order: 1; /* Image comes first on mobile */
+        min-height: 250px; /* Reasonable height for mobile */
+    }
+    
+    .program-description {
+        font-size: 1.1rem;
+    }
+    
+    .program-features ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-info {
+        padding: 20px;
+    }
+    
+    .image-placeholder {
+        width: 90%;
+        height: 90%;
+        font-size: 1rem;
+        padding: 15px;
+    }
+    
+    .enrichment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .schedule-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .time-slot {
+        min-width: 100%;
+        padding: 15px;
+    }
+    
+    .activity {
+        padding: 15px;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .program-header {
+        padding: 20px 15px;
+    }
+    
+    .program-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .program-age {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+    
+    .program-text {
+        padding: 20px 15px;
+    }
+    
+    .program-description {
+        font-size: 1rem;
+    }
+    
+    .program-features h4,
+    .program-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .program-features li {
+        font-size: 0.9rem;
+        padding-left: 20px;
+    }
+    
+    .image-placeholder {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    
+    .enrichment-card {
+        padding: 20px;
+    }
+    
+    .enrichment-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large Devices (Desktops, 1200px and up) - Ensure side-by-side */
+@media (min-width: 1200px) {
+    .program-layout {
+        grid-template-columns: 60% 40%; /* Clear side-by-side on large screens */
+    }
+}
+
+/* Map Section Responsive Styles */
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .map-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .map-info-card {
+        padding: 25px;
+    }
+    
+    .map-embed iframe {
+        min-height: 400px;
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .map-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .map-embed {
+        min-height: 300px;
+        order: 1;
+    }
+    
+    .map-embed iframe {
+        min-height: 300px;
+    }
+    
+    .map-info-card {
+        padding: 20px;
+        order: 2;
+        gap: 20px;
+    }
+    
+    .map-address {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .direction-options {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .direction-btn {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .map-cta {
+        padding: 15px;
+    }
+    
+    .map-cta p {
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .map-embed iframe {
+        min-height: 250px;
+    }
+    
+    .map-info-card {
+        padding: 15px;
+    }
+    
+    .direction-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .direction-btn {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .map-features li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .logo-img {
+        height: 40px; /* Smaller logo on mobile */
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem; /* Smaller text on mobile */
+    }
+    
+    /* Optional: Stack logo and text on very small screens */
+    @media (max-width: 480px) {
+        .logo {
+            flex-direction: column;
+            gap: 5px;
+            text-align: center;
+        }
+    }
+}

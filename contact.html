@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mountolives Kiddies School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="mount" class="logo-img">
+                <h1>Mountolives Kiddies School</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                     <li><a href="programs.html">Programs</a></li> 
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: url('images/contacts-hero.jpg');">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Get in touch with our team for any questions about enrollment, programs, or to schedule a visit.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h2>Get in Touch</h2>
+                    
+                    <div class="contact-item">
+                        <h3>Visit Us</h3>
+                        <p>15, Oluokun Street, <br>Ijapo Estate, Akure</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Call Us</h3>
+                        <p>+234 813 549 0948</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email Us</h3>
+                        <p>mountoliveskiddies555@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 7:00 AM - 4:00 PM<br>Saturday: Closed<br>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions</option>
+                                <option value="general">General Information</option>
+                                <option value="tour">Schedule a Tour</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <!-- Google Maps Embed -->
+                <div class="map-embed">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31662.05418975849!2d5.1771192643790185!3d7.268496081159512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10478fcf84328e3b%3A0x3e56f119f01a1890!2s15%20Oluokun%20St%2C%20Akure%20340110%2C%20Ondo!5e0!3m2!1sen!2sng!4v1761417019745!5m2!1sen!2sng" 
+                   width="600" 
+                   height="450" 
+                   style="border:0;" 
+                   allowfullscreen="" 
+                   loading="lazy" 
+                   referrerpolicy="no-referrer-when-downgrade"
+                   title="Mountolives Kiddies School Location">
+                </iframe>
+
+                </div>
+
+                <!-- Right column: features + info card (stacked) -->
+                <div class="map-side">
+                    <div class="map-features">
+                        <h4>Campus Features</h4>
+                        <ul>
+                            <li>✅ Free parking available</li>
+                            <li>✅ Security on campus</li>
+                            <li>✅ Visitor parking near main entrance</li>
+                        </ul>
+                    </div>
+
+                    <div class="map-info-card">
+                        <h3>Visit Our Campus</h3>
+                        <div class="map-address">
+                            <div class="address-icon">📍</div>
+                            <div class="address-details">
+                                <strong>Mountolives Kiddies School</strong><br>
+                                15, Oluokun Street<br>
+                                Ijapo Estate, Akure<br>
+                                Ondo State, Nigeria
+                            </div>
+                        </div>
+
+                        <div class="map-cta">
+                            <p><strong>Planning a visit?</strong> Let us know you're coming!</p>
+                            <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="quick-contact-section">
+        <div class="container">
+            <h2>Quick Contact</h2>
+            <p>Need immediate assistance? Choose the best way to reach us.</p>
+            
+            <div class="quick-contact-grid">
+                <div class="quick-contact-card">
+                    <h3>Emergency</h3>
+                    <p>For urgent matters during school hours</p>
+                    <a href="tel:+234 813 549 0948" target="_blank" class="btn btn-emergency">Call Now</a>
+                </div>
+                
+                <div class="quick-contact-card">
+                    <h3>Admissions</h3>
+                    <p>Questions about enrollment</p>
+                    <a href="mountoliveskiddies555@gmail.com" target="_blank" class="btn btn-primary">Email Us</a>
+                </div>
+                
+                <div class="quick-contact-card">
+                    <h3>General Info</h3>
+                    <p>General questions and support</p>
+                   <button class="btn btn-secondary chat-trigger">Chat Now</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mountolives Kiddies School</h3>
+                    <p>The Difference in Our Service is in Christ</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="index.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>+234 8135490948</li>
+                        <li>mountoliveskiddies555@gmail.com</li>
+                        <li>15, Oluokun Street, Ijapo Estate, Akure.</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                       <a href="" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                             </a>
+                    </div>
+                    <!-- <button class="chat-btn">Talk with Us</button> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mountolives Kiddies School. | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
