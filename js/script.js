@@ -1,6 +1,34 @@
 // JavaScript for Mountolives Kiddies School Website
 
+// Force scroll to top on page load
+window.onload = function() {
+    setTimeout(function() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
+    }, 0);
+};
+
+// Disable scroll restoration
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+// Reset scroll position when clicking on navigation links
+document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A' && e.target.href && !e.target.href.includes('#')) {
+        sessionStorage.setItem('shouldScrollTop', 'true');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
+    if (sessionStorage.getItem('shouldScrollTop')) {
+        window.scrollTo(0, 0);
+        sessionStorage.removeItem('shouldScrollTop');
+    }
+    
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -15,9 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close mobile menu when clicking on a link
     const navLinks = document.querySelectorAll('.nav-menu a');
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function(e) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            
+            // Ensure scroll to top on navigation
+            if (!this.getAttribute('href').includes('#')) {
+                sessionStorage.setItem('shouldScrollTop', 'true');
+            }
         });
     });
     

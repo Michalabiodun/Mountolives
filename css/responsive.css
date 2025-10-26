@@ -24,21 +24,132 @@
     .page-hero h1 {
         font-size: 2.2rem;
     }
+
+    /* Footer Tablet Styles */
+    .footer .container .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* Footer Grid Styles for 800px screens */
+@media (max-width: 800px) {
+    .footer .container .footer-content {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: auto auto !important;
+        gap: 30px !important;
+        padding: 20px;
+    }
+
+    .footer .container .footer-content .footer-section {
+        width: 100% !important;
+        min-height: 100% !important;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
+
+/* Footer Grid Styles for 500px screens */
+@media (max-width: 500px) {
+    .footer .container .footer-content {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: auto auto !important;
+        gap: 20px !important;
+        padding: 15px;
+    }
+
+    .footer .container .footer-content .footer-section {
+        width: 100% !important;
+    }
+
+    .footer-section h3 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
 }
 
 /* Small Devices (Phones, 767px and down) */
 @media (max-width: 767px) {
     /* Typography */
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
     }
     
     .hero-content h1 {
@@ -59,20 +170,45 @@
     
     /* Header */
     .header .container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px 15px;
     }
     
     .logo {
-        margin-bottom: 15px;
+        margin-bottom: 0;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+        max-width: 70%;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        font-weight: 500;
     }
     
     .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--text-white);
         flex-direction: column;
         gap: 15px;
         width: 100%;
         text-align: center;
         display: none;
+        padding: 20px 0;
+        box-shadow: var(--shadow);
     }
     
     .nav-menu.active {
@@ -137,6 +273,82 @@
         max-width: 250px;
     }
     
+    /* Grid Layouts */
+    .portal-grid,
+    .announcement-grid,
+    .features-grid,
+    .team-grid,
+    .facilities-grid,
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px;
+    }
+
+    /* Footer Mobile Styles */
+    .footer-content {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .footer-section ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-section li {
+        margin-bottom: 5px;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 8px;
+    }
+
+    .social-links a {
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+        padding: 10px 0;
+    }
+
+    /* Card Sizing */
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card {
+        padding: 15px;
+    }
+
     /* Sections */
     .portals,
     .announcements,
@@ -234,6 +446,147 @@
 
 /* Medium-Small Devices (800px and down) */
 @media (max-width: 800px) {
+    .header .container {
+        padding: 8px 15px;
+    }
+    
+    .logo h1 {
+        font-size: 0.9rem;
+    }
+
+    .contact-details {
+        padding: 20px;
+    }
+
+    .contact-details h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-details .contact-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+    /* Quick Contact Grid Layout */
+    .quick-contact-section .container > h2,
+    .quick-contact-section .container > p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .quick-contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .quick-contact-card {
+        padding: 15px;
+        background-color: var(--secondary-color);
+        border-radius: var(--border-radius);
+    }
+
+    /* Grid Layouts */
+    .portal-grid,
+    .announcement-grid,
+    .features-grid,
+    .team-grid,
+    .facilities-grid,
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Card Content */
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card {
+        padding: 12px;
+    }
+
+    .portal-card ul,
+    .feature-card p,
+    .announcement-card p {
+        margin-bottom: 10px;
+    }
+
+    /* Typography adjustments for 800px */
+    h1 {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .portal-card h3,
+    .announcement-card h3,
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .logo-img {
+        height: 45px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .logo {
+        gap: 6px;
+        max-width: 65%;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+        flex: 1;
+        display: inline-block;
+    }
+
     .hero, .page-hero {
         min-height: 50vh;
         background-size: cover;
@@ -247,6 +600,225 @@
 
 /* Extra Small Devices (500px and down) */
 @media (max-width: 500px) {
+    .header .container {
+        padding: 5px 10px;
+    }
+
+    .logo h1 {
+        font-size: 0.8rem;
+    }
+
+    /* Quick Contact Grid Layout */
+    .quick-contact-section .container > h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .quick-contact-section .container > p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .quick-contact-grid {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .quick-contact-card {
+        padding: 12px;
+    }
+
+    .quick-contact-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .quick-contact-card p {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+
+    .quick-contact-card .btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .contact-details {
+        padding: 15px;
+    }
+
+    .contact-details h2 {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .contact-details .contact-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .contact-item {
+        padding: 10px;
+    }
+
+    .contact-item h3 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .contact-item p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    /* Footer 500px Styles */
+    .footer-content {
+        gap: 8px;
+    }
+
+    .footer-section h3 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.7rem;
+        padding: 8px 0;
+    }
+
+    /* Grid Layouts */
+    .portal-grid,
+    .announcement-grid,
+    .features-grid,
+    .team-grid,
+    .facilities-grid,
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Card Styling */
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card {
+        padding: 10px;
+    }
+
+    /* Card Content */
+    .portal-card ul {
+        padding-left: 15px;
+    }
+
+    .portal-card li {
+        margin-bottom: 5px;
+    }
+
+    .announcement-icon {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .portal-btn,
+    .feature-card .btn {
+        padding: 6px 12px;
+    }
+
+    /* Typography adjustments for 500px */
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.95rem;
+    }
+    
+    p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .portal-card h3,
+    .announcement-card h3,
+    .feature-card h3 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 8px 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section h4 {
+        font-size: 0.95rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+
+    .logo-img {
+        height: 40px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .logo {
+        gap: 5px;
+        max-width: 60%;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+        flex: 1;
+        display: inline-block;
+    }
+
     .hero, .page-hero {
         min-height: 40vh;
         background-position: center 20%;
@@ -948,5 +1520,118 @@
             gap: 5px;
             text-align: center;
         }
+    }
+}
+
+/* Gallery Page Responsive Styles */
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .lightbox-content {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+    
+    .lightbox-info {
+        padding: 20px;
+    }
+}
+
+/* Small Devices (Phones, 767px and down) */
+@media (max-width: 767px) {
+    .gallery-filter {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .gallery-overlay {
+        padding: 15px;
+        opacity: 1;
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+    
+    .gallery-info {
+        transform: translateY(0);
+    }
+    
+    .gallery-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .lightbox-content {
+        width: 95%;
+        margin: 5% auto;
+        max-height: 95vh;
+    }
+    
+    .lightbox-image img {
+        max-height: 60vh;
+    }
+    
+    .lightbox-nav {
+        padding: 0 10px;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+    .gallery-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-info h3 {
+        font-size: 1rem;
+    }
+    
+    .gallery-info p {
+        font-size: 0.8rem;
+    }
+    
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+    
+    .lightbox-info {
+        padding: 15px;
+    }
+    
+    .lightbox-info h3 {
+        font-size: 1.2rem;
     }
 }

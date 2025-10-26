@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Mountolives Kiddies School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Mountolives Kiddies School" class="logo-img">
+                <h1>Mountolives Kiddies School</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: url('images/gallery-hero.jpg');">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Capturing precious moments of learning, growth, and fun at Mountolives Kiddies School</p>
+        </div>
+    </section>
+
+    <!-- Gallery Navigation -->
+    <section class="gallery-nav">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="classroom">Classroom Activities</button>
+                <button class="filter-btn" data-filter="playground">Playground Fun</button>
+                <button class="filter-btn" data-filter="events">School Events</button>
+                <button class="filter-btn" data-filter="arts">Arts & Crafts</button>
+                <button class="filter-btn" data-filter="sports">Sports Day</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Classroom Activities -->
+                <div class="gallery-item" data-category="classroom">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/classroom-1.jpg" alt="Children learning in classroom" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Interactive Learning</h3>
+                                <p>Students engaged in hands-on activities</p>
+                                <span class="gallery-category">Classroom Activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classroom">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/classroom-2.jpg" alt="Story time with teacher" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Story Time</h3>
+                                <p>Captivating story sessions with our teachers</p>
+                                <span class="gallery-category">Classroom Activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playground Fun -->
+                <div class="gallery-item" data-category="playground">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/playground-1.jpg" alt="Children playing on swings" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Outdoor Play</h3>
+                                <p>Fun moments on our safe playground equipment</p>
+                                <span class="gallery-category">Playground Fun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="playground">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/playground-2.jpg" alt="Kids playing in sandbox" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sandbox Adventures</h3>
+                                <p>Creative play in our sensory sand area</p>
+                                <span class="gallery-category">Playground Fun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School Events -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/event-1.jpg" alt="Annual day celebration" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Annual Day</h3>
+                                <p>Colorful performances by our talented students</p>
+                                <span class="gallery-category">School Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/event-2.jpg" alt="Science fair exhibition" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Science Fair</h3>
+                                <p>Young scientists showcasing their projects</p>
+                                <span class="gallery-category">School Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arts & Crafts -->
+                <div class="gallery-item" data-category="arts">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/arts-1.jpg" alt="Children painting" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Creative Painting</h3>
+                                <p>Expressing imagination through colors</p>
+                                <span class="gallery-category">Arts & Crafts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="arts">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/arts-2.jpg" alt="Clay modeling activity" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Clay Modeling</h3>
+                                <p>Developing fine motor skills with clay</p>
+                                <span class="gallery-category">Arts & Crafts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Day -->
+                <div class="gallery-item" data-category="sports">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/sports-1.jpg" alt="Sports day races" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Field Races</h3>
+                                <p>Healthy competition and team spirit</p>
+                                <span class="gallery-category">Sports Day</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/sports-2.jpg" alt="Prize distribution" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Achievement Celebration</h3>
+                                <p>Recognizing our young athletes</p>
+                                <span class="gallery-category">Sports Day</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more gallery items as needed -->
+                <div class="gallery-item" data-category="classroom">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/classroom-3.jpg" alt="Music class" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Music Class</h3>
+                                <p>Exploring rhythm and melody</p>
+                                <span class="gallery-category">Classroom Activities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/event-3.jpg" alt="Cultural festival" loading="lazy">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Cultural Festival</h3>
+                                <p>Celebrating diversity and traditions</p>
+                                <span class="gallery-category">School Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="gallery-load-more">
+                <button class="btn btn-primary" id="loadMore">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="galleryLightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-image">
+                <img src="" alt="" id="lightbox-img">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+                <span class="lightbox-category" id="lightbox-category"></span>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev">&#10094;</button>
+                <button class="lightbox-next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to See More?</h2>
+                <p>Schedule a visit to experience our vibrant learning environment firsthand</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+                    <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mountolives Kiddies School</h3>
+                    <p>The Difference in Our Service is Christ</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="index.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>+234 8135490948</li>
+                        <li>mountoliveskiddies555@gmail.com</li>
+                        <li>15, Oluokun Street, Ijapo Estate, Akure.</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                             </a>
+                    </div>
+                    <!-- <button class="chat-btn">Talk with Us</button> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mountolives Kiddies School. | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
