@@ -449,6 +449,86 @@
     .header .container {
         padding: 8px 15px;
     }
+
+    /* Typography */
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Gallery Grid Layout */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .gallery-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .gallery-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    /* Buttons */
+    .btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .btn-primary, 
+    .btn-secondary {
+        padding: 8px 16px;
+    }
+
+    /* Images in other sections */
+    .portal-card img,
+    .team-member img,
+    .facility-card img {
+        height: 160px;
+    }
+
+    /* Cards and Content */
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card {
+        padding: 12px;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
     
     .logo h1 {
         font-size: 0.9rem;
@@ -602,6 +682,96 @@
 @media (max-width: 500px) {
     .header .container {
         padding: 5px 10px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+    
+    p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    /* Gallery Grid Layout */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .gallery-card {
+        width: 100%;
+    }
+
+    .gallery-card img {
+        height: 140px;
+        border-radius: 4px;
+    }
+
+    .gallery-card .caption {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    /* Buttons */
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+
+    .btn-primary, 
+    .btn-secondary {
+        padding: 6px 14px;
+    }
+
+    /* Images in other sections */
+    .portal-card img,
+    .team-member img,
+    .facility-card img {
+        height: 140px;
+    }
+
+    /* Cards and Content */
+    .portal-card,
+    .announcement-card,
+    .feature-card,
+    .team-member,
+    .facility-card,
+    .achievement-card {
+        padding: 10px;
+    }
+
+    .card-content {
+        padding: 8px;
+    }
+
+    .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Spacing and margins */
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 
     .logo h1 {

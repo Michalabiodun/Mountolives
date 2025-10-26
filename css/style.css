@@ -111,6 +111,16 @@ p {
     background-color: #e9ecef;
 }
 
+.btn-schedule-tour {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid var(--border-color);
+}
+
+.btn-schedule-tour:hover {
+    background-color: #f8f9fa;
+}
+
 .btn-emergency {
     background-color: #dc3545;
     color: var(--text-white);
