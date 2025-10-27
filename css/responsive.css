@@ -10,19 +10,19 @@
 /* Medium Devices (Tablets, 768px to 1199px) */
 @media (max-width: 1199px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     h2 {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .page-hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     /* Footer Tablet Styles */
@@ -38,19 +38,19 @@
     }
 
     .footer-section h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 15px;
     }
 
     .footer-section h4 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 12px;
     }
 
     .footer-section p,
     .footer-section li,
     .footer-section a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1.5;
     }
 }
@@ -71,19 +71,19 @@
     }
 
     .footer-section h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 12px;
     }
 
     .footer-section h4 {
-        font-size: 0.95rem;
+        font-size: 0.7rem;
         margin-bottom: 10px;
     }
 
     .footer-section p,
     .footer-section li,
     .footer-section a {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         line-height: 1.5;
     }
 }
@@ -103,19 +103,19 @@
     }
 
     .footer-section h3 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-bottom: 8px;
     }
 
     .footer-section h4 {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         margin-bottom: 8px;
     }
 
     .footer-section p,
     .footer-section li,
     .footer-section a {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         line-height: 1.3;
     }
 }
@@ -124,48 +124,48 @@
 @media (max-width: 767px) {
     /* Typography */
     h1 {
-        font-size: 1.6rem;
-    }
-    
-    h2 {
         font-size: 1.4rem;
     }
     
-    h3 {
+    h2 {
         font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
     }
 
     h4 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     
     p {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         line-height: 1.6;
     }
 
     .section-subtitle {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .btn {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
     
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .page-hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .page-hero p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     /* Header */
@@ -300,19 +300,19 @@
     }
 
     .footer-section h3 {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         margin-bottom: 10px;
     }
 
     .footer-section h4 {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
         margin-bottom: 8px;
     }
 
     .footer-section p,
     .footer-section li,
     .footer-section a {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         line-height: 1.4;
     }
 
@@ -331,11 +331,11 @@
     }
 
     .social-links a {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .footer-bottom p {
-        font-size: 0.75rem;
+        font-size: 0.55rem;
         padding: 10px 0;
     }
 
@@ -452,23 +452,23 @@
 
     /* Typography */
     h1 {
-        font-size: 1.4rem;
-    }
-    
-    h2 {
         font-size: 1.2rem;
     }
     
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    h4 {
+    h2 {
         font-size: 1rem;
     }
     
-    p {
+    h3 {
         font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+    
+    p {
+        font-size: 0.7rem;
         line-height: 1.5;
     }
 
@@ -495,7 +495,7 @@
 
     /* Buttons */
     .btn {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         padding: 8px 16px;
     }
 
@@ -526,12 +526,12 @@
     }
 
     .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-bottom: 1.5rem;
     }
     
     .logo h1 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .contact-details {
@@ -603,43 +603,43 @@
 
     /* Typography adjustments for 800px */
     h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     h2 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     h4 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .hero-content h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .hero-content p {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
     }
 
     .section-subtitle {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
     }
 
     .footer-section h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .footer-section h4 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .portal-card h3,
@@ -662,7 +662,7 @@
     }
 
     .logo h1 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         flex: 1;
         display: inline-block;
     }
@@ -686,23 +686,23 @@
 
     /* Typography */
     h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     h2 {
-        font-size: 1.1rem;
-    }
-    
-    h3 {
-        font-size: 1rem;
-    }
-
-    h4 {
         font-size: 0.9rem;
     }
     
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 0.7rem;
+    }
+    
     p {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         line-height: 1.4;
     }
 
@@ -724,13 +724,13 @@
     }
 
     .gallery-card .caption {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 6px;
     }
 
     /* Buttons */
     .btn {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 6px 14px;
     }
 
@@ -761,7 +761,7 @@
     }
 
     .section-subtitle {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         margin-bottom: 1rem;
     }
 
@@ -775,17 +775,17 @@
     }
 
     .logo h1 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     /* Quick Contact Grid Layout */
     .quick-contact-section .container > h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 10px;
     }
 
     .quick-contact-section .container > p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-bottom: 15px;
     }
 
@@ -799,17 +799,17 @@
     }
 
     .quick-contact-card h3 {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
         margin-bottom: 8px;
     }
 
     .quick-contact-card p {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         margin-bottom: 12px;
     }
 
     .quick-contact-card .btn {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         padding: 8px 16px;
     }
 
@@ -819,7 +819,7 @@
 
     .contact-details h2 {
         margin-bottom: 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .contact-details .contact-item {
@@ -833,12 +833,12 @@
     }
 
     .contact-item h3 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-bottom: 8px;
     }
 
     .contact-item p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         line-height: 1.4;
     }
 
@@ -848,28 +848,28 @@
     }
 
     .footer-section h3 {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
         margin-bottom: 8px;
     }
 
     .footer-section h4 {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         margin-bottom: 6px;
     }
 
     .footer-section p,
     .footer-section li,
     .footer-section a {
-        font-size: 0.75rem;
+        font-size: 0.55rem;
         line-height: 1.3;
     }
 
     .social-links a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .footer-bottom p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding: 8px 0;
     }
 
@@ -904,7 +904,7 @@
     }
 
     .announcement-icon {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 8px;
     }
 
@@ -915,59 +915,59 @@
 
     /* Typography adjustments for 500px */
     h1 {
-        font-size: 1.4rem;
-    }
-    
-    h2 {
         font-size: 1.2rem;
     }
     
-    h3 {
+    h2 {
         font-size: 1rem;
+    }
+    
+    h3 {
+        font-size: 0.8rem;
     }
 
     h4 {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
     }
     
     p {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         line-height: 1.5;
     }
 
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .hero-content p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .portal-card h3,
     .announcement-card h3,
     .feature-card h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .btn {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         padding: 8px 20px;
     }
 
     .footer-section h3 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .footer-section h4 {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
     }
 
     .nav-menu a {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .logo-img {
@@ -999,7 +999,7 @@
     }
 
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -1011,28 +1011,28 @@
     }
     
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     
     h2 {
-        font-size: 1.3rem;
-    }
-    
-    h3 {
         font-size: 1.1rem;
     }
     
+    h3 {
+        font-size: 0.9rem;
+    }
+    
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .page-hero h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     
     .btn {
         padding: 10px 20px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     .portal-card,
@@ -1186,7 +1186,7 @@
 @media (max-width: 480px) {
     .admissions-tab {
         padding: 10px 20px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     .process-step {
@@ -1206,7 +1206,7 @@
     }
     
     .tuition-price {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -1259,7 +1259,7 @@
         width: 50px;
         height: 50px;
         margin-right: 20px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     
     .timeline-content {
@@ -1292,7 +1292,7 @@
     }
     
     .stat-number {
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -1300,7 +1300,7 @@
 @media (max-width: 480px) {
     .about-tab {
         padding: 8px 12px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     
     .timeline-item {
@@ -1332,7 +1332,7 @@
     }
     
     .facility-icon {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     
     .achievement-card {
@@ -1395,18 +1395,18 @@
     .success-icon {
         width: 60px;
         height: 60px;
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
 }
 
 /* Extra Small Devices (Phones, 480px and down) */
 @media (max-width: 480px) {
     .modal-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .form-section h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .form-group input,
@@ -1637,7 +1637,7 @@
         gap: 8px;
         text-align: center;
         padding: 10px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     .map-cta {
@@ -1645,7 +1645,7 @@
     }
     
     .map-cta p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -1669,7 +1669,7 @@
     }
     
     .map-features li {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -1680,7 +1680,7 @@
     }
     
     .logo h1 {
-        font-size: 1.2rem; /* Smaller text on mobile */
+        font-size: 1rem; /* Smaller text on mobile */
     }
     
     /* Optional: Stack logo and text on very small screens */
@@ -1704,7 +1704,7 @@
     
     .lightbox-content {
         grid-template-columns: 1fr;
-        max-width: 700px;
+        max-width: 600px;
     }
     
     .lightbox-info {
@@ -1720,7 +1720,7 @@
     
     .filter-btn {
         padding: 8px 16px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     .gallery-grid {
@@ -1739,7 +1739,7 @@
     }
     
     .gallery-info h3 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     
     .lightbox-content {
@@ -1760,7 +1760,7 @@
     .lightbox-next {
         width: 40px;
         height: 40px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -1794,7 +1794,7 @@
         right: 10px;
         width: 35px;
         height: 35px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .lightbox-info {
@@ -1802,6 +1802,6 @@
     }
     
     .lightbox-info h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
